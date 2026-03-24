@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0a192f;
+  --color-navy-light: #112240;
+  --color-navy-hover: #233554;
+  --color-slate: #8892b0;
+  --color-slate-light: #a8b2d1;
+  --color-slate-lightest: #ccd6f6;
+  --color-teal: #64ffda;
+}
+
+html {
+  scroll-behavior: smooth;
+}
