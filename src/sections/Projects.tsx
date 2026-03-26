@@ -1,5 +1,12 @@
 const projects = [
   {
+    title: 'Design System',
+    description:
+      'Accessible React component library built with TypeScript and React Aria. WCAG 2.1 AA compliant components with full keyboard navigation, documented with Storybook and visual regression tested via Chromatic.',
+    link: 'https://github.com/ArmanGolmakan/design-system',
+    technologies: ['React', 'TypeScript', 'Storybook', 'Chromatic', 'Tailwind CSS'],
+  },
+  {
     title: 'MindMap',
     description:
       'Full-stack to-do and note-taking application. Helps users efficiently create, organize, and manage tasks and reminders.',
@@ -19,13 +26,6 @@ const projects = [
       'Prototype for detecting and monitoring Age-Related Macular Degeneration. Provides various tests for diagnosing and tracking the progression of AMD.',
     link: 'https://github.com/ArmanGolmakan/Age-Related-Macular-Degeneration-Detection',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-  },
-  {
-    title: 'Super Mario 2D',
-    description:
-      'Classic Mario game recreation featuring platformer mechanics, interactive gameplay, and nostalgic visuals.',
-    link: 'https://github.com/ArmanGolmakan/Mario_Game',
-    technologies: ['Java'],
   },
 ]
 
@@ -80,18 +80,9 @@ export default function Projects() {
             {/* Hover background */}
             <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition-all duration-300 lg:block lg:group-hover/item:bg-navy-light lg:group-hover/item:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]" />
 
-            {/* Folder + GitHub icons column */}
+            {/* Folder */}
             <div className="z-10 mb-3 flex items-center justify-between lg:col-span-2 lg:mb-0 lg:flex-col lg:items-start lg:justify-start lg:pt-1">
               <FolderIcon />
-              <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`${title} on GitHub`}
-                className="text-slate transition-colors duration-200 hover:text-teal lg:mt-2"
-              >
-                <GitHubIcon />
-              </a>
             </div>
 
             {/* Content */}
